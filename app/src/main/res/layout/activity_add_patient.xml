@@ -1,0 +1,6 @@
+<LinearLayout ...>
+    <EditText android:id="@+id/name" ... />
+    <EditText android:id="@+id/age" ... />
+    <Spinner android:id="@+id/emergency_level" ... />
+    <Button android:id="@+id/submit" android:text="Add Patient" />
+</LinearLayout>
