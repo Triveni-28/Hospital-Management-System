@@ -1,6 +1,12 @@
 <resources>
     <!-- App Name -->
     <string name="app_name">MediQueue</string>
+    <string name="error_invalid_name">Please enter a valid name</string>
+    <string name="error_invalid_age">Please enter a valid age</string>
+    <string name="btn_submit">Submit</string>
+    <string name="hint_name">Enter name</string>
+    <string name="hint_age">Enter age</string>
+    <string name="label_emergency_level">Emergency Level</string>
 
     <!-- Activity Titles -->
     <string name="title_add_patient">Add Patient</string>
