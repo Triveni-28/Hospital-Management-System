@@ -20,12 +20,12 @@ public class AddPatientActivity extends AppCompatActivity {
     String ageStr = age.getText().toString().trim();
 
     if (!Utils.isValidName(nameStr)) {
-        Toast.makeText(this, "Please enter a valid name", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.error_invalid_name), Toast.LENGTH_SHORT).show();
         return;
     }
 
     if (!Utils.isValidAge(ageStr)) {
-        Toast.makeText(this, "Please enter a valid age", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.error_invalid_age), Toast.LENGTH_SHORT).show();
         return;
     }
 
