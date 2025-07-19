@@ -28,7 +28,7 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientV
         holder.age.setText("Age: " + p.getAge());
 
         // 🟢 Use emoji label from Utils class
-        holder.emergency.setText("Emergency: " + Utils.getEmergencyLabel(p.getEmergencyLevel()));
+        holder.emergencyTextView.setText(Utils.getEmergencyLabel(patient.getEmergencyLevel(), context));
     }
 
     @Override
