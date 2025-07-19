@@ -1,0 +1,10 @@
+{
+  "patients": {
+    "-XYZ123": {
+      "name": "John",
+      "age": 25,
+      "emergencyLevel": 2,
+      "timestamp": 1620000000
+    }
+  }
+}
