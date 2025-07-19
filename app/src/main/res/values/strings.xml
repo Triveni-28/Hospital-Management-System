@@ -1,0 +1,32 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">MediQueue</string>
+
+    <!-- Activity Titles -->
+    <string name="title_add_patient">Add Patient</string>
+    <string name="title_schedule_appointments">Schedule Appointments</string
+    >
+    <string name="title_main">MediQueue Hospital</string>
+
+    <!-- Buttons -->
+    <string name="btn_add_patient">Add Patient</string>
+    <string name="btn_schedule_appointments">Schedule Appointments</string>
+
+    <!-- Input Hints / Labels -->
+    <string name="hint_patient_name">Enter patient name</string>
+    <string name="hint_patient_age">Enter age</string>
+    <string name="hint_emergency_level">Select emergency level (1-5)</string>
+
+    <!-- Toasts / Messages -->
+    <string name="msg_patient_added">Patient added successfully</string>
+    <string name="msg_invalid_input">Please enter valid data</string>
+    <string name="msg_scheduling_complete">Appointments scheduled</string>
+    <string name="msg_no_patients">No patients available</string>
+
+    <!-- Emergency Level Labels -->
+    <string name="emergency_level_1">🟢 Low</string>
+    <string name="emergency_level_2">🟡 Moderate</string>
+    <string name="emergency_level_3">🟠 High</string>
+    <string name="emergency_level_4">🔴 Very High</string>
+    <string name="emergency_level_5">🚨 Critical</string>
+</resources>
