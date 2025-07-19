@@ -1,4 +1,6 @@
 // Form to add new patient
+import com.mediqueue.hospitalapp.Utils;
+
 public class AddPatientActivity extends AppCompatActivity {
     EditText name, age;
     Spinner emergency;
@@ -14,14 +16,25 @@ public class AddPatientActivity extends AppCompatActivity {
         submit = findViewById(R.id.submit);
 
         submit.setOnClickListener(v -> {
-            Patient p = new Patient(
-                name.getText().toString(),
-                Integer.parseInt(age.getText().toString()),
-                Integer.parseInt(emergency.getSelectedItem().toString()),
-                System.currentTimeMillis()
-            );
-            FirebaseHelper.addPatient(p);
-            finish();
+    String nameStr = name.getText().toString().trim();
+    String ageStr = age.getText().toString().trim();
+
+    if (!Utils.isValidName(nameStr)) {
+        Toast.makeText(this, "Please enter a valid name", Toast.LENGTH_SHORT).show();
+        return;
+    }
+
+    if (!Utils.isValidAge(ageStr)) {
+        Toast.makeText(this, "Please enter a valid age", Toast.LENGTH_SHORT).show();
+        return;
+    }
+
+    int emergencyLevel = Integer.parseInt(emergency.getSelectedItem().toString());
+    int ageVal = Integer.parseInt(ageStr);
+
+    Patient p = new Patient(nameStr, ageVal, emergencyLevel, System.currentTimeMillis());
+    FirebaseHelper.addPatient(p);
+    finish();
         });
     }
 }
