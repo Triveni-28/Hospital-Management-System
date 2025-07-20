@@ -1,12 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mediqueue.hospitalapp">
+    package="com.hospitalapp">
 
-    <!-- Permissions -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Remove Internet permission if not using Firebase or APIs -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
 
     <application
         android:allowBackup="true"
-        android:label="MediQueue"
+        android:label="Hospital Management System"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -23,7 +23,7 @@
         <!-- Add Patient Activity -->
         <activity android:name=".AddPatientActivity" />
 
-        <!-- Schedule Activity (if you create it) -->
+        <!-- Schedule Activity (optional) -->
         <activity android:name=".ScheduleActivity" />
 
     </application>
