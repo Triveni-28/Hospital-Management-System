@@ -29,7 +29,7 @@ What I Learned
 - Working with **Lists**, **Adapters**, and **PriorityQueue**
 - Handling user input and displaying data in Android
 
-About Me
+About Me:
 I’m Triveni, a Computer Science student at GSSSIETW, Mysuru.  
 This is one of my self-learning projects.
 
