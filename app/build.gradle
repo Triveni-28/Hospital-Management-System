@@ -1,14 +1,14 @@
 plugins {
     id 'com.android.application'
-    //id 'com.google.gms.google-services'
+    // Firebase plugin removed
 }
 
 android {
-    namespace 'com.hospital management system.hospitalapp'
+    namespace 'com.hospitalmanagementsystem.hospitalapp'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.hospital managementsystem.hospitalapp"
+        applicationId "com.hospitalmanagementsystem.hospitalapp"
         minSdk 21
         targetSdk 34
         versionCode 1
@@ -38,13 +38,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
-    // Firebase Realtime Database
-    //implementation 'com.google.firebase:firebase-database:20.3.0'
-    //implementation 'com.google.firebase:firebase-core:21.1.1'
-
-    // Firebase Auth (optional if login used)
-    // implementation 'com.google.firebase:firebase-auth:22.3.1'
 
     // Other libraries
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
