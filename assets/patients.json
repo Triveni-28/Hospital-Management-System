@@ -1,0 +1,20 @@
+[
+  {
+    "name": "John",
+    "age": 25,
+    "emergencyLevel": 2,
+    "timestamp": 1620000000
+  },
+  {
+    "name": "Alice",
+    "age": 30,
+    "emergencyLevel": 1,
+    "timestamp": 1620000500
+  },
+  {
+    "name": "Bob",
+    "age": 45,
+    "emergencyLevel": 3,
+    "timestamp": 1620001000
+  }
+]
