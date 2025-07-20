@@ -1,4 +1,4 @@
-package com.hospital management system.hospitalapp;
+package com.hospitalmanagementsystem.hospitalapp;
 
 import java.util.ArrayList;
 import java.util.List;
