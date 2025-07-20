@@ -1,5 +1,5 @@
 // Form to add new patient
-import com.mediqueue.hospitalapp.Utils;
+import com.hospital management system.hospitalapp.Utils;
 
 public class AddPatientActivity extends AppCompatActivity {
     EditText name, age;
