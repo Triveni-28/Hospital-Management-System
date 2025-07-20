@@ -4,7 +4,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
-import com.mediqueue.hospitalapp.Utils;  
+import com.hospital management system.hospitalapp.Utils;  
 public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientViewHolder> {
 
     private List<Patient> patientList;
