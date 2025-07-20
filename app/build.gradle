@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.mediqueue.hospitalapp'
+    namespace 'com.hospital management system.hospitalapp'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.mediqueue.hospitalapp"
+        applicationId "com.hospital managementsystem.hospitalapp"
         minSdk 21
         targetSdk 34
         versionCode 1
