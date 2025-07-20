@@ -1,0 +1,16 @@
+{
+  "patients": {
+    "-NkT1W3xY9MPLqzA1a2B": {
+      "name": "John Doe",
+      "age": 28,
+      "emergencyLevel": 3,
+      "timestamp": 1721100000000
+    },
+    "-NkT2Y9aE7GQcvW9cT3C": {
+      "name": "Jane Smith",
+      "age": 45,
+      "emergencyLevel": 2,
+      "timestamp": 1721100050000
+    }
+  }
+}
