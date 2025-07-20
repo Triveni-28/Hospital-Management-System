@@ -12,7 +12,7 @@
     <string name="title_add_patient">Add Patient</string>
     <string name="title_schedule_appointments">Schedule Appointments</string
     >
-    <string name="title_main">MediQueue Hospital</string>
+    <string name="title_main">hospital management Hospital</string>
 
     <!-- Buttons -->
     <string name="btn_add_patient">Add Patient</string>
