@@ -1,9 +1,7 @@
-// Displays scheduled appointments
-package com.mediqueue.hospitalapp;
+package com.hospital management system.hospitalapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -14,15 +12,15 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
-    FirebaseHelper firebaseHelper;
     Button addPatientBtn, scheduleBtn;
+    PatientManager patientManager; // Local file handler
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Binding UI
+        // Bind UI
         listView = findViewById(R.id.patientList);
         addPatientBtn = findViewById(R.id.add_patient_btn);
         scheduleBtn = findViewById(R.id.schedule_btn);
@@ -40,13 +38,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
         });
 
-        // Load and display patients
-        firebaseHelper = new FirebaseHelper();
-        firebaseHelper.getAllPatients(patients -> {
-            AppointmentScheduler scheduler = new AppointmentScheduler(patients);
-            List<Patient> sorted = scheduler.getScheduledPatients();
-            PatientAdapter adapter = new PatientAdapter(this, sorted);
-            listView.setAdapter(adapter);
-        });
+        // Load and display patients using local file
+        patientManager = new PatientManager(this);
+        List<Patient> allPatients = patientManager.getAllPatients();  // From local storage
+
+        AppointmentScheduler scheduler = new AppointmentScheduler(allPatients);
+        List<Patient> scheduled = scheduler.getScheduledPatients();
+        PatientAdapter adapter = new PatientAdapter(this, scheduled);
+        listView.setAdapter(adapter);
     }
 }
