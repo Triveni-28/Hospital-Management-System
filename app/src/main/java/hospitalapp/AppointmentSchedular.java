@@ -1,4 +1,4 @@
-package com.mediqueue.hospitalapp;
+package com.hospital management system.hospitalapp;
 
 import java.util.ArrayList;
 import java.util.List;
