@@ -1,4 +1,4 @@
-package com.mediqueue.hospitalapp;
+package com.hospitl management system.hospitalapp;
 
 import android.content.Context;
 import android.widget.Toast;
