@@ -1,0 +1,33 @@
+package com.mediqueue.hospitalapp;
+
+import android.content.Context;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class FileHelper {
+    private static final String FILE_NAME = "patients.dat";
+
+    public static void savePatient(Context context, Patient patient) {
+        List<Patient> existing = getAllPatients(context);
+        existing.add(patient);
+        try (ObjectOutputStream oos = new ObjectOutputStream(
+                new FileOutputStream(new File(context.getFilesDir(), FILE_NAME)))) {
+            oos.writeObject(existing);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static List<Patient> getAllPatients(Context context) {
+        File file = new File(context.getFilesDir(), FILE_NAME);
+        if (!file.exists()) return new ArrayList<>();
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
+            return (List<Patient>) ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
+    }
+}
